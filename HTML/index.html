@@ -1,195 +1,530 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
     <title>MOM</title>
-</head>
+  </head>
 
-<body class="conatiner">
+  <body class="conatiner">
     <nav class="flex justify-between items-center p-4 md:px-12">
-
-        <img src="../images/logo_MOM.jpg" alt="Logo">
-
-        <ul class="hidden md:flex gap-6">
-            <li class="hover:text-green-600"><a href="#">Home</a></li>
-            <li class="hover:text-green-600"><a href="#">About us</a></li>
-            <li class="hover:text-green-600"><a href="#">Blog</a></li>
-            <li class="hover:text-green-600"><a href="#">Contact us</a></li>
-            <li class="hover:text-green-600"><a href="#">Service</a></li>
-        </ul>
-        <button class="bg-green-800 text-white hover:bg-green-900 p-3  my-4">Sign Up</button>
-        <!-- <button class="md:hidden">☰</button> -->
+      <img src="../images/logo_MOM.jpg" alt="Logo" />
+      <ul class="hidden md:flex gap-6">
+        <li class="hover:text-green-600"><a href="#">Home</a></li>
+        <li class="hover:text-green-600"><a href="#">About us</a></li>
+        <li class="hover:text-green-600"><a href="#">Blog</a></li>
+        <li class="hover:text-green-600"><a href="#">Contact us</a></li>
+        <li class="hover:text-green-600"><a href="#">Service</a></li>
+      </ul>
+      <button class="bg-green-800 text-white hover:bg-green-900 p-3 my-4">
+        Sign Up
+      </button>
+      <!-- <button class="md:hidden">☰</button> -->
     </nav>
-
     <!--  Hero section  --  for mobile-col medium-row    -->
-    <section class=" flex flex-col md:flex-row items-center p-6 md:p-4">
-
+    <section class="flex flex-col md:w-full md:flex-row items-center py-20">
+      <div class="flex md:flex-row flex-col max-w-6xl mx-auto px-6">
         <!-- mobile-full medium-half  -->
-        <div class="w-full md:w-1/2 text-center md:text-left px-8">
-            <h1 class="text-3xl md:text-5xl font-bold">
-                Caring Hands, Quality Home Care for Your Little One
-            </h1>
-            <p class="mt-4 text-gray-500">
-                Welcome to Empowered Moms, a supportive space committed to empowering single mothers in managing child
-                care and achieving success. Our mission is to offer the guidance, resources and thrive in every aspect
-                of life.
-            </p>
-            <button class="bg-green-800 text-white hover:bg-green-900 p-3  my-4">Book a Session</button>
+        <div class="w-full md:w-1/2 text-left md:text-left px-8">
+          <h1 class="text-3xl md:text-5xl font-bold">
+            Caring Hands, Quality Home Care for Your Little One
+          </h1>
+          <p class="mt-4 text-gray-500">
+            Welcome to Empowered Moms, a supportive space committed to
+            empowering single mothers in managing child care and achieving
+            success. Our mission is to offer the guidance, resources and thrive
+            in every aspect of life.
+          </p>
+          <button class="bg-green-800 text-white hover:bg-green-900 p-3 my-4">
+            Book a Session
+          </button>
         </div>
-
-        <div class="w-full md:w-1/2 mt-8 ">
-            <div class="md:bg-yellow-400">
-                <img src="../images/heroimg.jpg" class="w-full h-72 md:p-3">
-            </div>
-
+        <div class="w-full md:w-1/2 mt-8">
+          <div class="md:bg-yellow-400">
+            <img src="../images/heroimg.jpg" class="w-full h-72 md:p-3" />
+          </div>
         </div>
-
-
-
-
+      </div>
     </section>
-
 
     <!-- About us -->
-    <section class=" flex flex-col md:flex-row items-center p-6 md:p-16">
-
-        <div class="w-full md:w-1/2 mt-8 md:mt-0 ">
-            <img src="../images/aboutusbtm.jpg" class="w-full h-96">
+    <section class="flex flex-col md:flex-row items-center px-4 py-20 md:p-16">
+      <div class="flex md:flex-row flex-col max-w-6xl mx-auto px-6">
+        <div class="w-full md:w-1/2 mt-8 md:mt-0">
+          <img src="../images/aboutusbtm.jpg" class="w-full h-96" />
         </div>
-
-        <div class="w-full md:w-1/2 text-center md:text-left px-8 py-4">
-            <p class="text-green-800">About us</p>
-            <h1 class="text-3xl md:text-5xl font-bold">
-                Caring Hands, Quality Home Care for Your Little One
-            </h1>
-            <p class="mt-4 text-gray-500">
-                Welcome to Empowered Moms, a supportive space committed to empowering single mothers in managing child
-                care and achieving success. Our mission is to offer the guidance, resources and thrive in every aspect
-                of life.
-            </p>
-            <button class="bg-green-800 text-white hover:bg-green-900 p-3  my-4">Book a Session</button>
+        <div class="w-full md:w-1/2 text-left md:text-left px-8 py-4">
+          <p class="text-green-800">About us</p>
+          <h1 class="text-3xl md:text-5xl font-bold">
+            Caring Hands, Quality Home Care for Your Little One
+          </h1>
+          <p class="mt-4 text-gray-500">
+            Welcome to Empowered Moms, a supportive space committed to
+            empowering single mothers in managing child care and achieving
+            success. Our mission is to offer the guidance, resources and thrive
+            in every aspect of life.
+          </p>
+          <button
+            class="bg-green-800 text-white hover:bg-green-900 p-3 inline-block md:w-auto my-4"
+          >
+            Book a Session
+          </button>
         </div>
-
+      </div>
     </section>
-
 
     <!-- Our Mission  -->
-    <section class=" flex flex-col md:flex-row p-6  ">
-        <div class="w-full md:w-1/2  text-center md:text-left px-4 py-4 h-96">
-            <p class="text-green-800">Our Mission</p>
-            <h1 class="text-3xl md:text-5xl font-bold">
-                Building a Brighter Future for Reliable ChildCare
-            </h1>
-            <p class="mt-4 text-gray-500">
-                Welcome to Empowered Moms, a supportive space committed to empowering single mothers in managing child
-                care and achieving success. Our mission is to offer the guidance, resources and thrive in every aspect
-                of life.
+    <section class="flex flex-col md:flex-row px-4 py-20">
+      <div
+        class="flex md:flex-row flex-col max-w-7xl mx-auto px-6 w-full px-4 py-4 h-auto"
+      >
+        <div class="w-full md:w-1/2 text-left md:text-left px-8 py-4">
+          <p class="text-green-800">Our Mission</p>
+          <h1 class="text-3xl md:text-5xl font-bold">
+            Building a Brighter Future for Reliable ChildCare
+          </h1>
+          <p class="mt-4 text-gray-500">
+            Welcome to Empowered Moms, a supportive space committed to
+            empowering single mothers in managing child care and achieving
+            success. Our mission is to offer the guidance, resources and thrive
+            in every aspect of life.
+          </p>
+          <button
+            class="bg-green-800 text-white hover:bg-green-900 p-3 inline-block md:w-auto my-4"
+          >
+            Learn More
+          </button>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 md:w-1/2">
+          <div class="p-3">
+            <img
+              class="bg-green-600 rounded-full p-1"
+              src="../assets/fisticon.svg"
+              alt="fist"
+            />
+            <h3 class="font-bold">Empowerment</h3>
+            <p>
+              Empower them by providing the knowledge, guidance, and support
+              necessary to overcome challenges.
             </p>
-            <button class="bg-green-800 text-white  p-3 hover:bg-green-900 my-4">Learn More</button>
+          </div>
+          <div class="p-3">
+            <img
+              class="bg-green-600 rounded-full p-1"
+              src="../assets/communityicon.svg"
+              alt="fist"
+            />
+            <h3 class="font-bold">Community Building</h3>
+            <p>
+              Build a supportive community where childcare providers can
+              connect, share best practices.
+            </p>
+          </div>
+          <div class="p-3">
+            <img
+              class="bg-green-600 rounded-full p-1"
+              src="../assets/personalizedapproachicon.svg"
+              alt="fist"
+            />
+            <h3 class="font-bold">Personalized Approach</h3>
+            <p>
+              Every child's journey is unique. Our mission is to provide
+              personalized childcare solutions and consulting.
+            </p>
+          </div>
+          <div class="p-3">
+            <img
+              class="bg-green-600 rounded-full p-1"
+              src="../assets/announcementicon.svg"
+              alt="fist"
+            />
+            <h3 class="font-bold">Advocacy and Awareness</h3>
+            <p>
+              Empower them by providing the knowledge, guidance, and support
+              necessary to overcome challenges.
+            </p>
+          </div>
         </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-2 md:w-1/2 ">
-            <div class="p-3">
-                <img class="bg-green-600 rounded-full p-1" src="../assets/fisticon.svg" alt="fist">
-                <h3 class="font-bold">Empowerment</h3>
-                <p>Empower them by providing the knowledge, guidance, and support necessary to overcome challenges.</p>
-            </div>
-            <div class="p-3">
-                <img class="bg-green-600 rounded-full p-1" src="../assets/communityicon.svg" alt="fist">
-                <h3 class="font-bold">Community Building</h3>
-                <p>Build a supportive community where childcare providers can connect, share best practices.</p>
-            </div>
-            <div class="p-3">
-                <img class="bg-green-600 rounded-full p-1" src="../assets/personalizedapproachicon.svg" alt="fist">
-                <h3 class="font-bold">Personalized Approach</h3>
-                <p>Every child's journey is unique. Our mission is to provide personalized childcare solutions and
-                    consulting.</p>
-            </div>
-            <div class="p-3">
-                <img class="bg-green-600 rounded-full p-1" src="../assets/announcementicon.svg" alt="fist">
-                <h3 class="font-bold">Advocacy and Awareness</h3>
-                <p>Empower them by providing the knowledge, guidance, and support necessary to overcome challenges.</p>
-            </div>
-
-        </div>
-
+      </div>
     </section>
 
-    
-   <!-- Heal Yourself -->
-<section class="relative bg-gray-100 py-20 overflow-hidden">
-
-    <div class="max-w-6xl mx-auto grid md:grid-cols-2 items-center relative">
-
+    <!-- Heal Yourself -->
+    <section class="relative bg-gray-100 px-4 py-20 overflow-hidden">
+      <div class="max-w-6xl mx-auto grid md:grid-cols-2 items-center relative">
         <!-- LEFT SIDE (Text Card) -->
-        <div class="relative z-10 bg-white 
-                    p-10 
-                    md:-mr-24 
-                    shadow-xl 
-                    rounded-lg">
-
-            <h2 class="text-3xl font-bold mb-4">Heal Yourself</h2>
-
-            <p class="text-gray-600 mb-6">
-                Our mission is to nurture your child's holistic development.
-                We provide guidance to support physical, cognitive,
-                emotional, and social growth.
-            </p>
-
-            <div class="space-y-5">
-
-                <div class="flex gap-4">
-                    <div class="bg-green-600 p-2 rounded-full h-8 w-8"></div>
-                    <div>
-                        <h4 class="font-semibold">Emotional Healing</h4>
-                        <p class="text-sm text-gray-500">
-                            Support emotional and social growth.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="flex gap-4">
-                    <div class="bg-green-600 p-2 rounded-full h-8 w-8"></div>
-                    <div>
-                        <h4 class="font-semibold">Self-Care</h4>
-                        <p class="text-sm text-gray-500">
-                            Practical tips for parents.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="flex gap-4">
-                    <div class="bg-green-600 p-2 rounded-full h-8 w-8"></div>
-                    <div>
-                        <h4 class="font-semibold">Mindset & Empowerment</h4>
-                        <p class="text-sm text-gray-500">
-                            Turn challenges into opportunities.
-                        </p>
-                    </div>
-                </div>
-
+        <div class="relative z-10 bg-white p-10 md:-mr-24 shadow-xl rounded-lg">
+          <h2 class="text-3xl font-bold mb-4">Heal Yourself</h2>
+          <p class="text-gray-600 mb-6">
+            Our mission is to nurture your child's holistic development. We
+            provide guidance to support physical, cognitive, emotional, and
+            social growth.
+          </p>
+          <hr />
+          <div class="space-y-5">
+            <div class="flex gap-4 pt-5">
+              <div class="bg-green-600 p-2 rounded-full h-8 w-8">
+                <img src="../assets/tickicon.svg" alt="tick" />
+              </div>
+              <div>
+                <h4 class="font-semibold">Emotional Healing</h4>
+                <p class="text-sm text-gray-500">
+                  Support emotional and social growth.
+                </p>
+              </div>
             </div>
+
+            <div class="flex gap-4">
+              <div class="bg-green-600 p-2 rounded-full h-8 w-8">
+                <img src="../assets/tickicon.svg" alt="tick" />
+              </div>
+              <div>
+                <h4 class="font-semibold">Self-Care</h4>
+                <p class="text-sm text-gray-500">Practical tips for parents.</p>
+              </div>
+            </div>
+
+            <div class="flex gap-4">
+              <div class="bg-green-600 p-2 rounded-full h-8 w-8">
+                <img src="../assets/tickicon.svg" alt="tick" />
+              </div>
+              <div>
+                <h4 class="font-semibold">Mindset & Empowerment</h4>
+                <p class="text-sm text-gray-500">
+                  Turn challenges into opportunities.
+                </p>
+              </div>
+            </div>
+            <div class="flex gap-4">
+              <div class="bg-green-600 p-2 rounded-full h-8 w-8">
+                <img src="../assets/tickicon.svg" alt="tick" />
+              </div>
+              <div>
+                <h4 class="font-semibold">Mindset & Empowerment</h4>
+                <p class="text-sm text-gray-500">
+                  Turn challenges into opportunities.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
 
         <!-- RIGHT SIDE (Image) -->
         <div class="relative">
-            <img src="../images/healyourselfimg.png"
-                 class="w-full h-[550px] object-cover rounded-lg"
-                 alt="">
+          <img
+            src="../images/healyourselfimg.png"
+            class="w-100 md:w-full h-[550px] object-cover rounded-lg"
+            alt=""
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- BLog Page -->
+    <section class="bg-emerald-800 px-4 py-20 pb-40 relative">
+      <div class="max-w-7xl mx-auto px-6 relative">
+        <!-- Header -->
+        <div
+          class="flex flex-col md:flex-row justify-between items-start mb-12"
+        >
+          <div>
+            <p class="text-yellow-400 text-sm font-semibold">Blog</p>
+            <h2 class="text-white text-4xl font-bold">
+              Inspiration and Guidance <br />
+              for Child
+            </h2>
+          </div>
+
+          <button
+            class="border border-white text-white my-3 px-6 py-3 rounded-md hover:bg-white hover:text-emerald-800 transition"
+          >
+            View More →
+          </button>
         </div>
 
+        <!-- Cards -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 -mb-96 relative z-10">
+          <!-- Card 1 -->
+          <div class="bg-white z-10 p-2 shadow-md">
+            <img src="../images/card1.jpg" class="w-full object-cover" />
+            <div class="p-6">
+              <h3 class="font-semibold mb-2">Our Childcare Guide</h3>
+              <p class="text-gray-600 text-sm mb-4">
+                This guide provides practical support and empowering advice for
+                children and lots of supportive way.
+              </p>
+              <a href="#" class="text-emerald-700 font-medium">Listen now →</a>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="bg-white p-2 shadow-md">
+            <img src="../images/card2.jpg" class="w-full object-cover" />
+            <div class="p-6">
+              <h3 class="font-semibold mb-2">Raising Resilient Kids</h3>
+              <p class="text-gray-600 text-sm mb-4">
+                Nurturing strength and adaptability in young minds. Equipping
+                children to face challenges with courage.
+              </p>
+              <a href="#" class="text-emerald-700 font-medium">Listen now →</a>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="bg-white p-2 shadow-md">
+            <img src="../images/card3.jpg" class="w-full object-cover" />
+            <div class="p-6">
+              <h3 class="font-semibold mb-2">Financial Security</h3>
+              <p class="text-gray-600 text-sm mb-4">
+                Building a strong foundation for the future. Protecting what
+                matters most: your family's well-being.
+              </p>
+              <a href="#" class="text-emerald-700 font-medium">Listen now →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQs Page -->
+    <section class="relative bg-gray-100 px-4 pt-80 overflow-hidden">
+      <div class="max-w-6xl mx-auto grid md:grid-cols-2 items-center relative">
+        <!-- Left SIDE (Image Card) -->
+        <div class="relative">
+          <img
+            src="../images/FAQimg.png"
+            class="w-100 md:w-full md:ml-3 h-[550px] object-cover rounded-lg"
+            alt=""
+          />
+        </div>
+
+        <!-- RIght SIDE (Text Card) -->
+        <div class="relative z-10 bg-white p-10 md:-ml-2 shadow-xl rounded-lg">
+          <p class="text-emerald-700 text-sm">FAQ</p>
+          <h2 class="text-3xl font-bold mb-4">Frequently Asked Questions</h2>
+          <div class="space-y-5">
+            <div class="flex justify-between border p-2 gap-4 pt-5">
+              <div>
+                <h4 class="font-semibold">Emotional Healing</h4>
+                <p class="text-sm text-gray-500">
+                  Support emotional and social growth.
+                </p>
+              </div>
+              <div class="bg-white-100 p-2 rounded-full h-8 w-8">
+                <img src="../assets/plusicon.svg" alt="tick" />
+              </div>
+            </div>
+
+            <div class="flex justify-between border p-2 gap-4">
+              <div>
+                <h4 class="font-semibold">Self-Care</h4>
+                <p class="text-sm text-gray-500">Practical tips for parents.</p>
+              </div>
+              <div class="bg-white-100 p-2 rounded-full h-8 w-8">
+                <img src="../assets/plusicon.svg" alt="tick" />
+              </div>
+            </div>
+
+            <div class="flex justify-between border p-2 gap-4">
+              <div>
+                <h4 class="font-semibold">Mindset & Empowerment</h4>
+                <p class="text-sm text-gray-500">
+                  Turn challenges into opportunities.
+                </p>
+              </div>
+              <div class="bg-white-100 p-2 rounded-full h-8 w-8">
+                <img src="../assets/plusicon.svg" alt="tick" />
+              </div>
+            </div>
+            <div class="flex justify-between border p-2 gap-4">
+              <div>
+                <h4 class="font-semibold">Mindset & Empowerment</h4>
+                <p class="text-sm text-gray-500">
+                  Turn challenges into opportunities.
+                </p>
+              </div>
+              <div class="bg-white-100 p-2 rounded-full h-8 w-8">
+                <img src="../assets/plusicon.svg" alt="tick" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Article Page -->
+    <section class="bg-stone-50 md:flex-row  py-20">
+      <!-- Header -->
+      <div class="flex flex-col md:flex-row justify-between items-start px-12">
+        <div>
+          <p class="text-emerald-800 text-sm font-semibold">Blog</p>
+          <h2 class="text-black-400 text-4xl font-bold">
+            Some Outstanding Articles
+          </h2>
+        </div>
+        <button class="border border-green text-green-600 my-3 px-6 py-3">
+          View More →
+        </button>
+      </div>
+      <!-- Both article  -->
+      <div class="grid grid-cols-1 md:grid-cols-2">
+        <!-- Left big article  -->
+        <div class="w-full h-full">
+          <div class="px-12">
+            <img class="pt-6" src="../images/articleimg.jpg" alt="img" />
+            <h3><strong>Practical Childcare Tips</strong></h3>
+            <br />
+            <p>April 7, 2022</p>
+            <br />
+            <p>
+              Practical Childcare Tips provide essential advice for parents and
+              caregivers to navigate daily challenges with ease.
+            </p>
+            <br />
+            <a href="#" class="text-green-600">Listen Now -></a>
+          </div>
+        </div>
+        <!-- Right 2 small article  -->
+        <div class="grid grid-cols-1 md:grid-row-2 h-132">
+          <div class="flex p-5">
+            <img
+              class="pt-2 h-56"
+              src="../images/article_right_top.jpg"
+              alt="img"
+            />
+            <div class="p-5">
+              <h3><strong>Emotional Well-being</strong></h3>
+              <br />
+              <p>April 7, 2022</p>
+              <br />
+              <p>
+                It involves providing support, understanding, and creating a
+                safe.
+              </p>
+              <br />
+
+              <a href="#" class="text-green-600 pb-4">Listen Now -></a>
+            </div>
+          </div>
+          <div class="flex p-5">
+            <img class="h-56" src="../images/aboutusbtm.jpg" alt="img" />
+            <div class="p-5">
+              <h3><strong>Personal Growth and Self-Discovery</strong></h3>
+              <br />
+              <p>April 7, 2022</p>
+              <br />
+              <p>Personal growth is the journey of understanding oneself.</p>
+              <br />
+
+              <a href="#" class="text-green-600 pb-4">Listen Now -></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonial Page -->
+    <section class="bg-stone-50 md:flex-row py-20">
+      <div class="flex flex-col md:flex-row justify-between space-between px-12">
+            <div>
+            <p class="text-emerald-800 text-sm font-semibold">Testimonials</p>
+            <h2 class="text-black-400 text-4xl font-bold">
+                What our Clients say About us
+            </h2>
+            </div>
+            
+            <button class="border border-green text-green-600 my-3 px-6 py-3">
+            View More →
+            </button>
+      </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 pt-6">
+
+            <!-- Testimonial 1 -->
+            <div class="flex flex-col md:flex-row text-left p-5">
+                <img
+                class="pt-2 h-56"
+                src="../images/test1.jpg"
+                alt="img"
+                />
+                <div class="p-5">
+                <h3><strong>Emotional Well-being</strong></h3>
+                <br />
+                <p>April 7, 2022</p>
+                <br />
+                <p>
+                    It involves providing support, understanding, and creating a
+                    safe.
+                </p>
+                <br />
+
+                <a href="#" class="text-green-600 pb-4">Listen Now -></a>
+                </div>
+            </div>
+
+            <!-- Testimonial 2 -->
+            <div class="flex flex-col  md:flex-row text-left p-5">
+                <img
+                class="pt-2 h-56"
+                src="../images/test2.png"
+                alt="img"
+                />
+                <div class="p-5">
+                <h3><strong>Emotional Well-being</strong></h3>
+                <br />
+                <p>April 7, 2022</p>
+                <br />
+                <p>
+                    It involves providing support, understanding, and creating a
+                    safe.
+                </p>
+                <br />
+
+                <a href="#" class="text-green-600 pb-4">Listen Now -></a>
+                </div>
+            </div>
+            
+            <!-- Testimonial 3 -->
+            <div class="flex flex-col  md:flex-row text-left p-5">
+                <img
+                class="pt-2 h-56"
+                src="../images/test3.png"
+                alt="img"
+                />
+                <div class="p-5">
+                <h3><strong>Emotional Well-being</strong></h3>
+                <br />
+                <p>April 7, 2022</p>
+                <br />
+                <p>
+                    It involves providing support, understanding, and creating a
+                    safe.
+                </p>
+                <br />
+
+                <a href="#" class="text-green-600 pb-4">Listen Now -></a>
+                </div>
+            </div>
+
+           <!-- Testimonial 4 -->
+            <div class="flex flex-col  md:flex-row text-left p-5">
+                <img class="pt-2 h-56" src="../images/test4.png" alt="img"/>
+                <div class="p-5 ">
+                <h3><strong>Emotional Well-being</strong></h3>
+                <br/>
+                <p>April 7, 2022</p>
+                <br/>
+                <p>
+                    It involves providing support, understanding, and creating a
+                    safe.
+                </p>
+                <br />
+
+                <a href="#" class="text-green-600 pb-4">Listen Now -></a>
+                </div>
+               </div>
     </div>
-
-</section>
-
-
-
-
-
-</body>
-
+    </section>
+  </body>
 </html>
