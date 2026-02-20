@@ -50,9 +50,14 @@ This repository contains a frontend layout built by converting a Figma design in
 
 ## 📁 Complete Folder Structure
 
-📦 Figma-to-HTML_Tailwind
- ┣ 📂 HTML
- ┃ ┗ 📄 index.html
- ┣ 📂 assets
- ┣ 📂 images
- ┗ 📄 README.md
+## 📁 Complete Folder Structure
+
+```
+Figma-to-HTML_Tailwind/
+│
+├── HTML/
+│   └── index.html
+├── assets/
+├── images/
+└── README.md
+```
