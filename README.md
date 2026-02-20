@@ -49,9 +49,6 @@ This repository contains a frontend layout built by converting a Figma design in
 ---
 
 ## 📁 Complete Folder Structure
-
-## 📁 Complete Folder Structure
-
 ```
 Figma-to-HTML_Tailwind/
 │
