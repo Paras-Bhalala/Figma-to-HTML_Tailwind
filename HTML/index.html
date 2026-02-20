@@ -10,44 +10,65 @@
 </head>
 
 <body class="conatiner">
-  <nav class="flex justify-between items-center p-4 md:px-12">
-    <img src="../images/logo_MOM.jpg" alt="Logo" />
-    <ul class="hidden md:flex gap-6">
-      <li class="hover:text-green-600"><a href="#">Home</a></li>
-      <li class="hover:text-green-600"><a href="#">About us</a></li>
-      <li class="hover:text-green-600"><a href="#">Blog</a></li>
-      <li class="hover:text-green-600"><a href="#">Contact us</a></li>
-      <li class="hover:text-green-600"><a href="#">Service</a></li>
-    </ul>
-    <button class="bg-green-800 text-white hover:bg-green-900 p-3 my-4">
-      Sign Up
-    </button>
-    <!-- <button class="md:hidden">☰</button> -->
-  </nav>
-  <!--  Hero section  --  for mobile-col medium-row    -->
-  <section class="flex flex-col md:w-full md:flex-row items-center py-20">
-    <div class="flex md:flex-row flex-col max-w-6xl mx-auto px-6">
-      <!-- mobile-full medium-half  -->
-      <div class="w-full md:w-1/2 text-left md:text-left px-8">
-        <h1 class="text-3xl md:text-5xl font-bold">
-          Caring Hands, Quality Home Care for Your Little One
-        </h1>
-        <p class="mt-4 text-gray-500">
-          Welcome to Empowered Moms, a supportive space committed to
-          empowering single mothers in managing child care and achieving
-          success. Our mission is to offer the guidance, resources and thrive
-          in every aspect of life.
-        </p>
-        <button class="bg-green-800 text-white hover:bg-green-900 p-3 my-4">
-          Book a Session
+
+  <!-- Nav bar and Hero Page -->
+  <section class="relative min-h-screen overflow-hidden">
+
+    <!-- RIGHT HALF YELLOW BACKGROUND -->
+    <div class="absolute top-0 right-0 w-1/2 h-100 bg-yellow-400"></div>
+
+    <!-- CONTENT WRAPPER -->
+    <div class="relative z-10">
+
+      <!-- NAVBAR -->
+      <nav class="flex justify-between items-center px-8 md:px-16 py-6">
+        <img src="../images/logo_MOM.jpg" alt="Logo" class="h-8" />
+
+        <ul class="hidden md:flex gap-8 font-medium">
+          <li><a href="#" class="text-green-700">Home</a></li>
+          <li><a href="#" class="hover:text-green-700">About Us</a></li>
+          <li><a href="#" class="hover:text-green-700">Blog</a></li>
+          <li><a href="#" class="hover:text-green-700">Contact Us</a></li>
+          <li><a href="#" class="hover:text-green-700">Service</a></li>
+        </ul>
+
+        <button class="bg-green-800 text-white px-6 py-2 hover:bg-green-900">
+          Sign Up
         </button>
-      </div>
-      <div class="w-full md:w-1/2 mt-8">
-        <div class="md:bg-yellow-400">
-          <img src="../images/heroimg.jpg" class="w-full h-72 md:p-3" />
+      </nav>
+
+      <!-- HERO -->
+      <div class="flex flex-col md:flex-row items-center min-h-[80vh]">
+
+        <!-- LEFT CONTENT -->
+        <div class="w-full md:w-1/2 px-8 md:px-16 py-16">
+          <h1 class="text-4xl md:text-4xl font-bold leading-tight">
+            Caring Hands,<br>
+            Quality Home Care<br>
+            for Your Little One
+          </h1>
+
+          <p class="mt-6 text-gray-600 max-w-md">
+            Welcome to Empowered Moms, a supportive space committed to empowering
+            single mothers in managing child care and achieving success.
+            Our mission is to offer the guidance, resources and thrive
+            in every aspect of life.
+          </p>
+
+          <button class="mt-8 bg-green-800 text-white px-6 py-3 hover:bg-green-900">
+            Book a Session
+          </button>
         </div>
+
+        <!-- RIGHT IMAGE -->
+        <div class="w-full md:w-1/2 flex justify-center items-center py-16">
+          <img src="../images/heroimg.jpg" class="w-4/5 shadow-lg relative " />
+        </div>
+
       </div>
+
     </div>
+
   </section>
 
   <!-- About us -->
@@ -191,7 +212,7 @@
 
       <!-- RIGHT SIDE (Image) -->
       <div class="relative">
-        <img src="../images/healyourselfimg.png" class="w-100 md:w-full h-[550px] object-cover rounded-lg" alt="" />
+        <img src="../images/healyourselfimg.png" class="w-100 md:w-full h-140 object-cover rounded-lg" alt="" />
       </div>
     </div>
   </section>
@@ -264,7 +285,7 @@
     <div class="max-w-6xl mx-auto grid md:grid-cols-2 items-center relative">
       <!-- Left SIDE (Image Card) -->
       <div class="relative">
-        <img src="../images/FAQimg.png" class="w-100 md:w-full md:ml-3 h-[550px] object-cover rounded-lg" alt="" />
+        <img src="../images/FAQimg.png" class="w-100 md:w-full md:ml-3 h-140 object-cover rounded-lg" alt="" />
       </div>
 
       <!-- RIght SIDE (Questions) -->
@@ -527,7 +548,7 @@
 
       <!-- Right Form -->
       <div class="flex flex-colw-full md:w-120 p-4">
-        <form action="#">
+        <form action="#" method="">
           <input type="text" name="name" placeholder="Your Name" class="border w-full mb-4 p-2 rounded-sm h-10">
           <input type="text" name="email" placeholder="Email address" class="border w-full mb-4 p-2 rounded-sm h-10">
           <input type="text" name="subject" placeholder="subject" class="border w-full mb-4 p-2 rounded-sm h-10">
@@ -543,15 +564,17 @@
 
   <footer class="bg-black text-white ">
     <!-- icons fb,linkedin,X -->
-     <div class="flex justify-center gap-8 p-4">
+    <div class="flex justify-center gap-8 p-4">
       <img src="../assets/fbicon.svg" alt="fbicon">
       <img src="../assets/xicon.svg" alt="xicon">
       <img src="../assets/linkedinicon.svg" alt="linkedinicon">
-     </div>
+    </div>
 
-      <!-- footer - liscence -->
+    <!-- footer - liscence -->
     <div class="flex flex-col md:flex-row md:justify-center text-center  pb-4">
-     <div class="pr-2">2024 All Rights Reserved |</div> <div class="pr-2"> Contact youremail@gmail.com  |</div> <div> MOM</div>
+      <div class="pr-2">2024 All Rights Reserved |</div>
+      <div class="pr-2"> Contact youremail@gmail.com |</div>
+      <div> MOM</div>
 
     </div>
   </footer>
