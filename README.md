@@ -8,12 +8,7 @@ This project demonstrates how to transform a Figma UI design into clean, structu
 
 ---
 
-## 🚀 Live Demo
 
-🔗 **View Project Live:**  
-https://paras-bhalala.github.io/Figma-to-HTML_Tailwind/
-
----
 
 ## 📌 About The Project
 
