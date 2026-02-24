@@ -5,6 +5,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <style>
+    html, body { overflow-x: hidden; max-width: 100%; }
+  </style>
 
   <title>MOM</title>
 </head>
@@ -63,7 +66,7 @@
         <!-- RIGHT IMAGE -->
         <div class="w-full md:w-1/2 flex justify-center items-center py-16 relative">
           <!-- ICON -->
-          <div class="top-9 left-5 absolute"><img src="../assets/greenlefttopicon.svg" alt=""></div>
+          <div class="top-9 left-10 absolute"><img src="../assets/greenlefttopicon.svg" alt=""></div>
           <img src="../images/heroimg.jpg" class="w-4/5 shadow-lg relative " />
           <!-- ICON  -->
           <div class="bottom-3 right-2 absolute"><img src="../assets/fullgreyicon.svg" alt=""></div>
@@ -81,14 +84,14 @@
     <div class="flex md:flex-row flex-col max-w-6xl mx-auto px-6">
       <div class="w-full md:w-1/2 mt-8 md:mt-0 relative">
         <!-- ICON  -->
-            
-        <img src="../images/aboutusbtm.jpg" class="md:w-125 w-3/4 h-100 absolute object-cover" alt="">
+        <img src="../assets/greenrighttopicon.svg" class="-right-6 absolute -top-8 z-120" alt=""> 
+        <img src="../images/aboutusbtm.jpg" class="md:w-full w-3/4 h-100 absolute object-cover" alt="">
         
 
         <img src="../images/aboutustop.jpg" class="md:w-70 w-3/4 h-70 absolute z-10 -ml-4 mt-40 object-cover" alt="">
         <!-- ICON  -->
         <img src="../assets/fullyellowicon.svg" class="mt-95 z-100 relative -ml-15" alt="">
-        <img src="../assets/greenrighttopicon.svg" class="left-0 top-100" alt="">    
+           
       </div>
       <div class="w-full md:w-1/2 text-left md:text-left px-8 py-4">
         <p class="text-green-800">About us</p>
@@ -165,7 +168,7 @@
 
   <!-- Heal Yourself -->
   <section class="relative  py-24 overflow-hidden">
-    <div class="w-30 h-30 ml-280 -mt-15 absolute"><img src="../assets/fullyellowicon.svg" alt=""></div>
+    <div class="w-30 h-30 ml-280 right-0 top-4 absolute"><img src="../assets/fullyellowicon.svg" alt=""></div>
     <div class="h-30 w-30 pt-130 absolute"><img src="../assets/fullgreenicon.svg" alt=""></div>
     <div class="max-w-6xl mx-auto grid md:grid-cols-2 items-center relative">
       
@@ -235,7 +238,7 @@
   </section>
 
   <!-- BLog Page -->
-  <section class="bg-emerald-800 px-4 py-20 pb-40 relative">
+  <section class="bg-emerald-800 px-4 py-20 pb-40 relative overflow-hidden">
     <div class="max-w-7xl mx-auto px-6 relative">
       <!-- Header -->
       <div class="flex flex-col md:flex-row justify-between items-start mb-12 relative">
@@ -255,10 +258,10 @@
       </div>
 
       <!-- Cards -->
-      <div class="grid grid-cols-1 overflow-hidden gap-1 md:grid-cols-3 md:ml-55 md:w-190 -mb-96 relative z-10">
+      <div class="grid grid-cols-1 overflow-hidden gap-1 md:grid-cols-3 md:ml-40 md:w-3/4 -mb-96 relative z-10">
         
         <!-- Card 1 -->
-        <div class="bg-white w-full mr-5  p-2 shadow-md">
+        <div class="bg-white w-full mr-5 z-10  p-2 shadow-md">
           <img src="../images/card1.jpg" class="w-full object-cover" />
           <div class="p-6">
             <h3 class="font-semibold mb-2">Our Childcare Guide</h3>
@@ -296,12 +299,12 @@
           </div>
         </div>
       </div>
-      <div class="mt-50 h-30 w-30 absolute z-100  ml-285 "><img src="../assets/fullyellowicon.svg" alt=""></div>
+      <div class="mt-50 h-30 w-30 absolute z-100 right-0 "><img src="../assets/fullyellowicon.svg" alt=""></div>
     </div>
   </section>
 
   <!-- FAQs Page -->
-  <section class="relative bg-gray-100 px-4 pt-80 overflow-hidden">
+  <section class="relative bg-gray-100 px-4 pt-80 ">
     <div class="max-w-6xl mx-auto grid md:grid-cols-2 items-center relative">
       <!-- Left SIDE (Image Card) -->
       <div class="relative">
@@ -310,7 +313,7 @@
 
       <!-- RIght SIDE (Questions) -->
       <div class="relative  z-10 bg-white p-10 md:-ml-4 shadow-xl">
-        <img src="../assets/greenrighttopicon.svg" alt="" class="right-20 top-12 absolute">
+        <img src="../assets/greenrighttopicon.svg" alt="" class="right-32 top-12 absolute">
         <p class="text-emerald-700 text-sm">FAQ</p>
         <h2 class="text-3xl font-bold mb-4">Frequently Asked Questions</h2>
         
@@ -370,7 +373,7 @@
   </section>
 
   <!-- Article Page -->
-  <section class="bg-stone-50 md:flex-row  py-20">
+  <section class="bg-stone-50 md:flex-row overflow-hidden py-20">
     <div class="overflow-hidden">
       <!-- Header -->
       <div class="flex flex-col md:flex-row justify-between relative items-start px-12">
@@ -437,14 +440,14 @@
             </div>
           </div>
         </div>
-         <img src="../assets/fullyellowicon.svg" alt="" class="absolute -right-7 top-50">
+         <img src="../assets/fullyellowicon.svg" alt="" class="absolute right-4 top-50">
       </div>
     </div>
   </section>
 
   <!-- Testimonial Page -->
-  <section class="bg-stone-50 md:flex-row p-10 relative">
-    <img src="../assets/fullgreenicon.svg" alt="" class="absolute left-0 top-125">
+  <section class="bg-stone-50 w-full md:flex-row p-10 relative">
+    <img src="../assets/fullgreenicon.svg" alt="" class="hidden absolute left-0 top-125">
     <div class="flex flex-col md:flex-row justify-between space-between px-12">
       
       <div>
@@ -452,16 +455,18 @@
         <h2 class="text-black-400 text-4xl font-bold">
           What our Clients say About us
         </h2>
+        
       </div>
+      <img src="../assets/greenrighttopicon.svg" alt="" class=" top-12 right-160 absolute">
 
-      <button class="border border-green text-green-600 my-3 px-6 py-3">
+      <button class="border border-green text-green-600 my-3 px-2 py-1">
         View More →
       </button>
       
     </div>
     
 
-    <div class="grid grid-cols-1 gap-5 md:grid-cols-2 px-15 pt-6">
+    <div class="grid grid-cols-1 w-full gap-5 md:grid-cols-2 px-1 pt-6">
 
 
       <!-- Testimonial 1 -->
@@ -580,11 +585,11 @@
       <!-- Right Form -->
       <div class="flex flex-colw-full md:w-120 p-4">
         <form action="#" method="">
-          <input type="text" name="name" placeholder="Your Name" class="border w-full mb-4 p-2 rounded-sm h-10">
-          <input type="text" name="email" placeholder="Email address" class="border w-full mb-4 p-2 rounded-sm h-10">
-          <input type="text" name="subject" placeholder="subject" class="border w-full mb-4 p-2 rounded-sm h-10">
+          <input type="text" name="name" placeholder="Your Name" class="border w-full mb-4 p-2 h-10">
+          <input type="text" name="email" placeholder="Email address" class="border w-full mb-4 p-2  h-10">
+          <input type="text" name="subject" placeholder="subject" class="border w-full mb-4 p-2  h-10">
           <textarea name="message" id="message" placeholder="Message"
-            class="border w-full mb-4 p-2 rounded-sm h-20"></textarea>
+            class="border w-full mb-4 p-2 h-20"></textarea>
           <br>
           <button class="bg-green-800 text-white hover:bg-green-900 p-3 my-4">Send Message</button>
 
