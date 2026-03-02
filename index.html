@@ -5,6 +5,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet" class="font-Quicksand">
   <style>
     html,
     body {
@@ -16,15 +20,15 @@
   <title>MOM</title>
 </head>
 
-<body class="conatiner">
+<body class="font-Quicksand">
   <!-- Nav bar and Hero Page -->
-  <section class="relative min-h-screen overflow-hidden">
+  <section class="relative container pb-8 mx-auto  overflow-hidden">
     <!-- RIGHT HALF YELLOW BACKGROUND -->
     <div class="absolute top-0 right-0  md:w-1/2 h-100 bg-amber-300"></div>
     <div class="relative z-10">
       <!-- NAVBAR -->
       <nav class="flex justify-between items-center px-8 md:px-16 py-6">
-        <img src="../images/logo_MOM.jpg" alt="Logo" class="h-8" />
+        <img src="../assets/MOM.svg" alt="Logo" class="h-8" />
         <ul class="hidden md:flex gap-8 font-medium">
           <li><a href="#" class="text-green-700">Home</a></li>
           <li><a href="#" class="hover:text-green-700">About Us</a></li>
@@ -32,15 +36,15 @@
           <li><a href="#" class="hover:text-green-700">Contact Us</a></li>
           <li><a href="#" class="hover:text-green-700">Service</a></li>
         </ul>
-        <button class="bg-emerald-700 text-white px-6 py-2 hover:bg-green-900">
+        <button class="bg-emerald-700 text-white px-6 py-2 hover:bg-green-900 cursor-pointer">
           Sign Up
         </button>
       </nav>
       <!-- HERO -->
       <div class="flex flex-col md:flex-row items-center ">
         <!-- LEFT CONTENT -->
-        <div class="w-full md:w-1/2 px-8 md:px-16 py-10">
-          <h1 class="text-4xl md:text-4xl font-bold leading-tight">
+        <div class="w-full md:w-1/2 px-8 md:px-16 mx-auto py-10">
+          <h1 class="text-4xl md:text-4xl font-bold ">
             Caring Hands,<br>
             Quality Home Care<br>
             for Your Little One
@@ -52,71 +56,76 @@
             Our mission is to offer the guidance, resources and thrive
             in every aspect of life.
           </p>
-          <button class="mt-8 bg-emerald-700 text-white px-6 py-3 hover:bg-green-900">
+          <button class="mt-8 bg-emerald-700 text-white px-6 py-3 hover:bg-green-900 cursor-pointer">
             Book a Session
           </button>
         </div>
         <!-- RIGHT IMAGE -->
-        <div class="w-full md:w-1/2 flex justify-center items-center py-16 relative">
+        <div class="w-full md:w-1/2 flex justify-center items-center md:py-16 relative">
           <!-- ICON -->
-          <div class="top-9 left-10 absolute"><img src="../assets/greenlefttopicon.svg" alt=""></div>
+          <div class="left-5 bottom-54 md:top-9  md:left-10 absolute "><img src="../assets/greenlefttopicon.svg"
+              alt="green strip"></div>
           <img src="../images/heroimg.jpg" class="w-4/5 shadow-lg relative " />
           <!-- ICON  -->
-          <div class="bottom-3 right-2 absolute"><img src="../assets/fullgreyicon.svg" alt=""></div>
+          <div class="-bottom-8 z-10 right-2 absolute md:right-6 md:bottom-6"><img src="../assets/fullgreyicon.svg"
+              alt=" grey icon"></div>
         </div>
       </div>
     </div>
   </section>
 
   <!-- About us -->
-  <section class="flex flex-col md:flex-row items-center px-4 py-20 md:p-16">
-    <div class="flex md:flex-row flex-col max-w-6xl mx-auto px-6">
-      <div class="w-full md:w-1/2 mt-8 md:mt-0 relative">
+  <section class="flex container flex-col  mx-auto md:flex-row items-center  py-20 md:p-16">
+    <div class="flex md:flex-row container flex-col max-w-6xl mx-auto ">
+      <div class=" w-full md:w-1/2 mt-8 md:mt-0 relative">
         <!-- ICON  -->
-        <img src="../assets/greenrighttopicon.svg" class="-right-6 absolute -top-8 z-120" alt="">
-        <img src="../images/aboutusbtm.jpg" class="md:w-full w-3/4 h-100 absolute object-cover" alt="">
-        <img src="../images/aboutustop.jpg" class="md:w-70 w-3/4 h-70 absolute z-10 -ml-4 mt-40 object-cover" alt="">
+        <img src="../assets/greenrighttopicon.svg" class="flex justify-center right-4 -top-6 md:-right-6 absolute md:-top-8" alt="">
+        <img src="../images/aboutusbtm.jpg" class="md:w-full  w-4/5 flex align-center md:left-0 left-11 z-1 h-100 absolute object-cover" alt="">
+        <img src="../images/aboutustop.jpg" class="md:w-70 w-3/4 h-70 absolute z-10 left-11 md:left-0 -ml-4 mt-40 object-cover" alt="">
         <!-- ICON  -->
-        <img src="../assets/fullyellowicon.svg" class="mt-95 z-100 relative -ml-15" alt="">
+        <img src="../assets/fullyellowicon.svg" class="mt-95 z-100 relative md:-ml-12" alt="">
       </div>
-      <div class="w-full md:w-1/2 text-left md:text-left px-8 py-4">
-        <p class="text-green-800">About us</p>
-        <h1 class="text-3xl md:text-5xl font-bold">
-          Caring Hands, Quality Home Care for Your Little One
-        </h1>
-        <p class="mt-4 text-gray-500">
-          Welcome to Empowered Moms, a supportive space committed to
-          empowering single mothers in managing child care and achieving
-          success. Our mission is to offer the guidance, resources and thrive
-          in every aspect of life.
+     
+      <div class="w-full md:w-1/2 px-8  py-10">
+        <p><span class="text-emerald-700">About Us</span></p>
+        <h2 class="text-4xl md:text-4xl font-bold">
+          Finding Superior Care for Your Baby
+        </h2>
+
+        <p class="mt-6 text-gray-600 ">
+          Reliable child care is essential for single moms striving to balance work, family, and personal growth. It
+          provides a safe and nurturing environment for children, allowing mothers to pursue their careers and goals
+          with peace of mind. Access to trustworthy child care resources helps single mothers manage their busy lives
+          more effectively.
         </p>
-        <button class="bg-emerald-700 text-white hover:bg-green-900 p-3 inline-block md:w-auto my-4">
-          Book a Session
+        <button class="mt-8 bg-emerald-700 text-white px-6 py-3 hover:bg-green-900 cursor-pointer">
+          Learn More
         </button>
       </div>
     </div>
   </section>
 
   <!-- Our Mission  -->
-  <section class="flex flex-col md:flex-row px-4 ">
-    <div class="flex md:flex-row flex-col max-w-7xl mx-auto px-6 w-full px-4 py-4 h-auto">
-      <div class="w-full md:w-1/2 text-left md:text-left px-8 py-4">
+  <section class=" container mx-auto ">
+    <div class="w-full flex  flex-col  md:flex-row md:w-full px-8 md:px-16 ">
+      <div class="w-full md:w-1/2 text-left md:text-left mx-auto py-4">
         <p class="text-green-800">Our Mission</p>
-        <h1 class="text-3xl md:text-5xl font-bold">
+        <h2 class="text-4xl md:text-4xl font-bold">
           Building a Brighter Future for Reliable ChildCare
-        </h1>
+        </h2>
         <p class="mt-4 text-gray-500">
           Welcome to Empowered Moms, a supportive space committed to
           empowering single mothers in managing child care and achieving
           success. Our mission is to offer the guidance, resources and thrive
           in every aspect of life.
         </p>
-        <button class="bg-emerald-700 text-white hover:bg-green-900 p-3 inline-block md:w-auto my-4">
+        <button class="bg-emerald-700 text-white hover:bg-green-900 p-3 inline-block md:w-auto my-4 cursor-pointer">
           Learn More
         </button>
       </div>
-      <div class="grid grid-cols-1 md:grid-cols-2 md:w-1/2">
-        <div class="p-3">
+      <!-- Right grid -->
+      <div class="grid  grid-cols-1 md:grid-cols-2 md:w-1/2">
+        <div class="p-1">
           <img class="bg-emerald-700 rounded-full p-1" src="../assets/fisticon.svg" alt="fist" />
           <h3 class="font-bold">Empowerment</h3>
           <p>
@@ -124,7 +133,7 @@
             necessary to overcome challenges.
           </p>
         </div>
-        <div class="p-3">
+        <div class="p-1">
           <img class="bg-emerald-700 rounded-full p-1" src="../assets/communityicon.svg" alt="fist" />
           <h3 class="font-bold">Community Building</h3>
           <p>
@@ -132,7 +141,7 @@
             connect, share best practices.
           </p>
         </div>
-        <div class="p-3">
+        <div class="p-1">
           <img class="bg-emerald-700 rounded-full p-1" src="../assets/personalizedapproachicon.svg" alt="fist" />
           <h3 class="font-bold">Personalized Approach</h3>
           <p>
@@ -140,7 +149,7 @@
             personalized childcare solutions and consulting.
           </p>
         </div>
-        <div class="p-3">
+        <div class="p-1">
           <img class="bg-emerald-700 rounded-full p-1" src="../assets/announcementicon.svg" alt="fist" />
           <h3 class="font-bold">Advocacy and Awareness</h3>
           <p>
@@ -153,13 +162,16 @@
   </section>
 
   <!-- Heal Yourself -->
-  <section class="relative  py-24 overflow-hidden">
-    <div class="w-30 h-30 ml-280 right-0 top-4 absolute"><img src="../assets/fullyellowicon.svg" alt=""></div>
-    <div class="h-30 w-30 pt-130 absolute"><img src="../assets/fullgreenicon.svg" alt=""></div>
-    <div class="max-w-6xl mx-auto grid md:grid-cols-2 items-center relative">
-
+  <section class="relative container px-8 mx-auto py-24 overflow-hidden">
+    <div class="w-30 h-30 ml-280 right-0 top-6 absolute">
+      <img src="../assets/fullyellowicon.svg" alt="" class="hdd">
+    </div>
+    <div class="h-30 w-30 pt-130 absolute">
+      <img src="../assets/fullgreenicon.svg" alt="">
+    </div>
+    <div class="max-w-6xl mx-auto  grid md:grid-cols-2 items-center relative">
       <!-- LEFT SIDE (Text Card) -->
-      <div class="relative z-10 bg-white p-4 md:-mr-24 border-l-10 border-amber-300">
+      <div class="relative z-10  bg-white p-4 md:-mr-24 border-l-10 border-amber-300">
         <h2 class="text-3xl font-bold mb-4">Heal Yourself</h2>
         <div class="border-b-1 border-zinc-300 border-solid">
           <p class="text-gray-600 mb-6">
@@ -218,30 +230,30 @@
 
       <!-- RIGHT SIDE (Image) -->
       <div class="relative">
-        <img src="../images/healyourselfimg.png" class="w-100 md:w-full h-140 object-cover " alt="" />
+        <img src="../images/healyourselfimg.png" class="w-100 md:w-full md:ml-3 h-140 object-cover" alt="" />
       </div>
     </div>
   </section>
 
   <!-- BLog Page -->
-  <section class="bg-emerald-800  px-4 py-20 pb-20  relative ">
-    <div class="max-w-7xl mx-auto px-6 relative">
+  <section class="bg-emerald-800 container  mx-auto px-8 py-20 pb-20  relative ">
+    <div class="max-w-7xl mx-auto  relative">
       <!-- Header -->
-      <div class="flex flex-col md:flex-row justify-between items-start mb-12 relative">
+      <div class="flex flex-col md:flex-row md:px-8 justify-between items-start mb-12 relative">
         <div>
           <p class="text-yellow-400 text-sm font-semibold">Blog</p>
           <h2 class="text-white text-4xl font-bold">
-            Inspiration and Guidance <br />
+            Inspiration and Guidance
             for Child
           </h2>
         </div>
-        <div class="h-28 w-28 ml-105 mt-2 absolute"><img src="../assets/yellowrighttopicon.svg" alt=""></div>
-        <button class="border border-white text-white my-3 px-6 py-3  hover:bg-white hover:text-emerald-800 transition">
+        <div class="h-28 w-28 left-64 md:left-148 md:top-0 absolute "><img src="../assets/yellowrighttopicon.svg" alt=""></div>
+        <button class="border border-white text-white my-3 px-6 py-3  hover:bg-white hover:text-emerald-800 transition cursor-pointer">
           View More →
         </button>
       </div>
       <!-- Cards -->
-      <div class="grid grid-cols-1 gap-4 px-25 md:grid-cols-3 -mb-66">
+      <div class="grid grid-cols-1 md:px-8 gap-4 md:grid-cols-3 -mb-66">
         <!-- Card 1 -->
         <div class="bg-white w-full mr-5 z-10  p-2 shadow-md">
           <img src="../images/card1.jpg" class="w-full object-cover" />
@@ -281,21 +293,21 @@
           </div>
         </div>
       </div>
-      <div class="mt-10 h-30 w-30 absolute z-100 -right-17     "><img src="../assets/fullyellowicon.svg" alt=""></div>
+      <div class="mt-10 h-30 w-30 absolute z-100 -right-22     "><img src="../assets/fullyellowicon.svg" alt=""></div>
     </div>
   </section>
 
   <!-- FAQs Page -->
-  <section class="relative bg-gray-100 px-4 pt-50  pb-20 ">
+  <section class="relative container bg-gray-100 px-8 mx-auto pt-70  pb-20 ">
     <div class="max-w-6xl mx-auto grid md:grid-cols-2 items-center relative">
       <!-- Left SIDE (Image Card) -->
       <div class="relative">
-        <img src="../images/FAQimg.png" class="w-100 md:w-full md:ml-3 h-140 object-cover rounded-lg" alt="" />
+        <img src="../images/FAQimg.png" class="w-100 md:w-full md:ml-3 h-140 object-cover" alt="" />
       </div>
 
       <!-- RIght SIDE (Questions) -->
-      <div class="relative  z-10 bg-white p-10 md:-ml-4 shadow-xl">
-        <img src="../assets/greenrighttopicon.svg" alt="" class="right-32 top-12 absolute">
+      <div class="relative w-auto md:w-full  z-10 bg-white p-6  md:-ml-4  ">
+        <img src="../assets/greenrighttopicon.svg" alt="" class="left-67 md:left-103  md:top-8 absolute">
         <p class="text-emerald-700 text-sm">FAQ</p>
         <h2 class="text-3xl font-bold mb-4">Frequently Asked Questions</h2>
 
@@ -303,7 +315,7 @@
         <!-- All Questions -->
         <div class="space-y-5">
           <!-- Q1 -->
-          <div class="flex justify-between border p-2 gap-4 pt-5">
+          <div class="flex justify-between border border-zinc-300 p-2 gap-4 pt-5">
             <div>
               <h4 class="font-semibold">Emotional Healing</h4>
               <p class="text-sm text-gray-500">
@@ -315,7 +327,7 @@
             </div>
           </div>
           <!-- Q2 -->
-          <div class="flex justify-between border p-2 gap-4">
+          <div class="flex justify-between border border-zinc-300 p-2 gap-4">
             <div>
               <h4 class="font-semibold">Self-Care</h4>
               <p class="text-sm text-gray-500">Practical tips for parents.</p>
@@ -325,7 +337,7 @@
             </div>
           </div>
           <!-- Q3 -->
-          <div class="flex justify-between border p-2 gap-4">
+          <div class="flex justify-between border border-zinc-300 p-2 gap-4">
             <div>
               <h4 class="font-semibold">Mindset & Empowerment</h4>
               <p class="text-sm text-gray-500">
@@ -338,7 +350,7 @@
           </div>
 
           <!-- Q4 -->
-          <div class="flex justify-between border p-2 gap-4">
+          <div class="flex justify-between border border-zinc-300 p-2 gap-4">
             <div>
               <h4 class="font-semibold">Mindset & Empowerment</h4>
               <p class="text-sm text-gray-500">
@@ -354,45 +366,45 @@
     </div>
   </section>
 
-  <!-- Article Page -->
-  <section class="bg-stone-50 md:flex-row overflow-hidden py-20">
+  <!-- Article (Blog) Page -->
+  <section class="bg-stone-50 container md:flex-row mx-auto overflow-hidden px-8 py-20">
     <div class="overflow-hidden">
       <!-- Header -->
-      <div class="flex flex-col md:flex-row justify-between relative items-start px-12">
+      <div class="flex flex-col md:flex-row justify-between relative items-start md:px-8">
         <div>
           <p class="text-emerald-800 text-sm font-semibold">Blog</p>
           <h2 class="text-black-400 text-4xl font-bold">
             Some Outstanding Articles
           </h2>
-          <img src="../assets/greenrighttopicon.svg" alt="" class="right-185  bottom-10 absolute">
+          <img src="../assets/greenrighttopicon.svg" alt="" class="left-30 top-2 md:left-120  md:bottom-10 absolute">
         </div>
-        <button class="border border-green text-green-600 my-3 px-6 py-3">
+        <button class="border border-green text-green-600 mt-2 px-6 py-3 cursor-pointer hover:bg-green-600 hover:text-white">
           View More →
         </button>
       </div>
 
       <!-- Both article  -->
-      <div class="grid grid-cols-1 top-10 md:grid-cols-2 relative">
+      <div class="grid grid-cols-1 top-10 md:grid-cols-2 md:px-4 mb-6 relative">
 
         <!-- Left big article  -->
-        <div class="w-full h-full">
-          <div class="px-12">
+        <div class="w-full ">
+          <div class="md:px-4">
             <img class="pt-6" src="../images/articleimg.jpg" alt="img" />
             <h3><strong>Practical Childcare Tips</strong></h3>
-            <br />
+            <br/>
             <p>April 7, 2022</p>
-            <br />
+            <br/>
             <p>
               Practical Childcare Tips provide essential advice for parents and
               caregivers to navigate daily challenges with ease.
             </p>
-            <br />
-            <a href="#" class="text-green-600">Listen Now -></a>
+            <br/>
+            <a href="#" class="text-green-600 ">Listen Now →</a>
           </div>
         </div>
         <!-- Right 2 small article  -->
-        <div class="grid grid-cols-1 md:grid-row-2 h-132">
-          <div class="flex p-5">
+        <div class="grid w-full h-full grid-cols-1 md:grid-row-2">
+          <div class="flex md:p-5">
             <img class="pt-2 h-56" src="../images/article_right_top.jpg" alt="img" />
             <div class="p-5">
               <h3><strong>Emotional Well-being</strong></h3>
@@ -405,10 +417,10 @@
               </p>
               <br />
 
-              <a href="#" class="text-green-600 pb-4">Listen Now -></a>
+              <a href="#" class="text-green-600 pb-4">Listen Now →</a>
             </div>
           </div>
-          <div class="flex p-5">
+          <div class="flex md:p-5">
             <img class="h-56" src="../images/aboutusbtm.jpg" alt="img" />
             <div class="p-5">
               <h3><strong>Personal Growth and Self-Discovery</strong></h3>
@@ -418,7 +430,7 @@
               <p>Personal growth is the journey of understanding oneself.</p>
               <br />
 
-              <a href="#" class="text-green-600 pb-4">Listen Now -></a>
+                  <a href="#" class="text-green-600 pb-4">Listen Now →</a>
             </div>
           </div>
         </div>
@@ -428,9 +440,9 @@
   </section>
 
   <!-- Testimonial Page -->
-  <section class="bg-stone-50 w-full md:flex-row px-25 relative">
+  <section class="bg-stone-50 container  md:flex-row mx-auto  overflow-hidden px-8  py-14 relative">
     <img src="../assets/fullgreenicon.svg" alt="" class=" absolute left-0 top-120">
-    <div class="flex flex-col md:flex-row justify-between space-between ">
+    <div class="flex flex-col md:flex-row justify-between relative items-start  md:px-8">
 
       <div>
         <p class="text-emerald-800 text-sm font-semibold">Testimonials</p>
@@ -440,15 +452,14 @@
 
       </div>
       <img src="../assets/greenrighttopicon.svg" alt="" class=" top-1 right-157 absolute">
-
-      <button class="border border-green text-green-600 my-3 px-2 py-1">
+      <button class="border border-green text-green-600 my-3 px-6 py-3 cursor-pointer hover:bg-green-600 hover:text-white transition">
         View More →
       </button>
 
     </div>
 
 
-    <div class="grid grid-cols-1 w-full gap-5 md:grid-cols-2 px-1 pt-6">
+    <div class="grid grid-cols-1 w-full gap-5 md:grid-cols-2 md:px-8 pt-6">
 
 
       <!-- Testimonial 1 -->
@@ -513,7 +524,7 @@
           </p>
           <br>
           <img src="../assets/reviewstaricon.svg" alt="star">
-          
+
           <br>
           <p><strong>Hossain. </strong>Consultant Interventional Cardiologist</p>
 
@@ -523,21 +534,21 @@
   </section>
 
   <!-- Contact Page -->
-  <section class="bg-stone-50 md:flex-row py-20">
-    <div class="flex md:flex-row  flex-col max-w-6xl mx-auto px-6">
+  <section class="bg-stone-50 md:flex-row mx-auto overflow-hidden px-8 py-20">
+    <div class="flex md:flex-row  flex-col max-w-6xl mx-auto ">
 
       <!-- Left Contact -->
-      <div class="w-full align-center md:w-1/2 p-4">
-        <strong class="text-5xl">Contact Info</strong>
+      <div class="w-full text-leftmd:w-1/2 py-4">
+        <strong class="text-4xl">Contact Info</strong>
         <p>We are here to support you on your <br>
           journey with baby childcare</p>
 
         <!-- Contact info phone, email, location -->
         <div class="w-full flex flex-col">
           <!-- Phone -->
-          <div class="flex flex-row p-4">
+          <div class="flex flex-row py-4">
             <div>
-              <img class="pr-2 w-auto pt-4" src="../assets/callicon.svg" alt="callicon">
+              <img class="pr-2 w-auto pt-4 font-bold" src="../assets/callicon.svg" alt="callicon">
             </div>
             <h4><strong>Phone </strong><br>
               +91 9999999999</h4>
@@ -545,7 +556,7 @@
         </div>
         <div class="flex flex-col">
           <!-- Email -->
-          <div class="flex flex-row p-4">
+          <div class="flex flex-row py-4">
             <div>
               <img class="pr-2 w-auto pt-4" src="../assets/mailicon.svg" alt="mailicon">
             </div>
@@ -555,7 +566,7 @@
         </div>
         <div class="flex flex-col">
           <!-- Location -->
-          <div class="flex flex-row p-4">
+          <div class="flex flex-row py-4">
             <div>
               <img class="pr-2 w-auto pt-4" src="../assets/locationicon.svg" alt="locationicon">
             </div>
@@ -573,14 +584,14 @@
           <input type="text" name="subject" placeholder="subject" class="border w-full mb-4 p-2  h-10">
           <textarea name="message" id="message" placeholder="Message" class="border w-full mb-4 p-2 h-20"></textarea>
           <br>
-          <button class="bg-green-800 text-white hover:bg-green-900 p-3 my-4">Send Message</button>
+          <button class="bg-green-800 text-white hover:bg-green-900 p-3 my-4 cursor-pointer">Send Message</button>
 
         </form>
       </div>
     </div>
   </section>
 
-  <footer class="bg-black text-white ">
+  <footer class="bg-black text-white mx-auto ">
     <!-- icons fb,linkedin,X -->
     <div class="flex justify-center gap-8 p-4">
       <img src="../assets/fbicon.svg" alt="fbicon">
