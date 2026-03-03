@@ -21,7 +21,7 @@
   <title>MOM</title>
 </head>
 
-<body >
+<body>
   <!-- Nav bar and Hero Page -->
   <section class="relative container pb-8 mx-auto  overflow-hidden">
     <!-- RIGHT HALF YELLOW BACKGROUND -->
@@ -30,16 +30,18 @@
       <!-- NAVBAR -->
       <nav class="flex justify-between items-center px-8 md:px-16 py-6">
         <img src="../assets/MOM.svg" alt="Logo" class="h-8" />
-        <ul class="hidden md:flex gap-8 font-medium">
-          <li><a href="#" class="text-green-700">Home</a></li>
-          <li><a href="#" class="hover:text-green-700">About Us</a></li>
-          <li><a href="#" class="hover:text-green-700">Blog</a></li>
-          <li><a href="#" class="hover:text-green-700">Contact Us</a></li>
-          <li><a href="#" class="hover:text-green-700">Service</a></li>
-        </ul>
-        <button class="bg-emerald-700 text-white px-6 py-2 hover:bg-green-900 cursor-pointer">
-          Sign Up
-        </button>
+        <div class="flex gap-35 justify-center">
+          <ul class="hidden md:flex gap-8 font-medium pt-2">
+            <li><a href="#" class="text-green-700">Home</a></li>
+            <li><a href="#" class="hover:text-green-700">About Us</a></li>
+            <li><a href="#" class="hover:text-green-700">Blog</a></li>
+            <li><a href="#" class="hover:text-green-700">Contact Us</a></li>
+            <li><a href="#" class="hover:text-green-700">Service</a></li>
+          </ul>
+          <button class="bg-emerald-700 text-white px-6 py-2 hover:bg-green-900 cursor-pointer">
+            Sign Up
+          </button>
+        </div>
       </nav>
       <!-- HERO -->
       <div class="flex flex-col md:flex-row items-center ">
@@ -66,7 +68,7 @@
           <!-- ICON -->
           <div class="left-5 bottom-54 md:top-9  md:left-10 absolute "><img src="../assets/greenlefttopicon.svg"
               alt="green strip"></div>
-          <img src="../images/heroimg.jpg" class="w-4/5 shadow-lg relative " />
+          <img src="../images/heroimg.jpg" class="w-4/5 relative " />
           <!-- ICON  -->
           <div class="-bottom-8 z-10 right-2 absolute md:right-6 md:bottom-6"><img src="../assets/fullgreyicon.svg"
               alt=" grey icon"></div>
@@ -76,21 +78,26 @@
   </section>
 
   <!-- About us -->
-  <section class="flex container flex-col  mx-auto md:flex-row items-center  py-20 md:p-16">
+  <section class="flex container flex-col  mx-auto md:flex-row items-center px-8 md:py-20 py-8 md:p-16">
     <div class="flex md:flex-row container flex-col max-w-6xl mx-auto ">
-      <div class=" w-full md:w-1/2 mt-8 md:mt-0 relative">
+      <!-- Both Image + Icon  -->
+      <div class=" w-full md:w-1/2 mt-8 md:mt-0 relative p-8">
         <!-- ICON  -->
         <img src="../assets/greenrighttopicon.svg"
-          class="flex justify-center right-4 -top-6 md:-right-6 absolute md:-top-8" alt="">
+          class="flex justify-center right-1 top-0 md:right-12 absolute md:top-1" alt="strip">
+
         <img src="../images/aboutusbtm.jpg"
-          class="md:w-full  w-4/5 flex align-center md:left-0 left-11 z-1 h-100 absolute object-cover" alt="">
+          class="md:w-4/5  w-4/5 flex align-center md:left-10 left-11 z-1 h-100 absolute object-cover"
+          alt="bottom image">
+
         <img src="../images/aboutustop.jpg"
-          class="md:w-70 w-3/4 h-70 absolute z-10 left-11 md:left-0 -ml-4 mt-40 object-cover" alt="">
+          class="md:w-70 w-3/4 h-70  z-10 left-2        md:left-0  mt-40 object-cover absolute" alt="top image">
         <!-- ICON  -->
-        <img src="../assets/fullyellowicon.svg" class="mt-95 z-100 relative md:-ml-12" alt="">
+        <img src="../assets/fullyellowicon.svg" class="mt-95 z-100 relative right-16 md:-ml-18 md:top-2"
+          alt="full icon">
       </div>
 
-      <div class="w-full md:w-1/2 px-8  py-10">
+      <div class="w-full md:w-1/2 md:px-8  py-10">
         <p><span class="text-emerald-700">About Us</span></p>
         <h2 class="text-4xl md:text-4xl font-bold">
           Finding Superior Care for Your Baby
@@ -112,18 +119,15 @@
   <!-- Our Mission  -->
   <section class=" container mx-auto ">
     <div class="w-full flex  flex-col  md:flex-row md:w-full px-8 md:px-16 ">
-      <div class="w-full md:w-1/2 text-left md:text-left mx-auto py-4">
+      <div class="w-full md:w-1/2 md:pr-40 text-left md:text-left   mx-auto py-4">
         <p class="text-green-800">Our Mission</p>
         <h2 class="text-4xl md:text-4xl font-bold">
           Building a Brighter Future for Reliable ChildCare
         </h2>
         <p class="mt-4 text-gray-500">
-          Welcome to Empowered Moms, a supportive space committed to
-          empowering single mothers in managing child care and achieving
-          success. Our mission is to offer the guidance, resources and thrive
-          in every aspect of life.
+          We are dedicated to helping Child thrive, succeed, and find fulfillment in all aspects of their lives.
         </p>
-        <button class="bg-emerald-700 text-white hover:bg-green-900 p-3 inline-block md:w-auto my-4 cursor-pointer">
+        <button class="mt-8 bg-emerald-700 text-white px-6 py-3 hover:bg-green-900 cursor-pointer">
           Learn More
         </button>
       </div>
@@ -166,16 +170,16 @@
   </section>
 
   <!-- Heal Yourself -->
-  <section class="relative container px-8 mx-auto py-24 overflow-hidden">
+  <section class="relative  mx-auto py-20 ">
     <div class="w-30 h-30 ml-280 right-0 top-6 absolute">
       <img src="../assets/fullyellowicon.svg" alt="" class="hdd">
     </div>
-    <div class="h-30 w-30 pt-130 absolute">
+    <div class="h-30 w-30 pt-130 absolute hidden">
       <img src="../assets/fullgreenicon.svg" alt="">
     </div>
     <div class="max-w-6xl mx-auto  grid md:grid-cols-2 items-center relative">
       <!-- LEFT SIDE (Text Card) -->
-      <div class="relative z-10  bg-white p-4 md:-mr-24 border-l-10 border-amber-300">
+      <div class="relative z-10 ml-9 bg-white p-4 md:ml-2 md:-mr-24 border-l-10 border-amber-300">
         <h2 class="text-3xl font-bold mb-4">Heal Yourself</h2>
         <div class="border-b-1 border-zinc-300 border-solid">
           <p class="text-gray-600 mb-6">
@@ -233,8 +237,9 @@
       </div>
 
       <!-- RIGHT SIDE (Image) -->
-      <div class="relative">
-        <img src="../images/healyourselfimg.png" class="w-100 md:w-full md:ml-3 h-140 object-cover" alt="" />
+      <div class="relative w-full object-cover">
+        <img src="../images/healyourselfimg.png" class="w-full md:w-full md:ml-3 px-8 md:mr-0 h-140 "
+          alt="father child" />
       </div>
     </div>
   </section>
@@ -307,13 +312,13 @@
   <section class="relative container bg-gray-100 px-8 mx-auto pt-70  pb-20 ">
     <div class="max-w-6xl mx-auto grid md:grid-cols-2 items-center relative">
       <!-- Left SIDE (Image Card) -->
-      <div class="relative">
-        <img src="../images/FAQimg.png" class="w-100 md:w-full md:ml-3 h-140 object-cover" alt="" />
+      <div class="relative w-full object-cover">
+        <img src="../images/FAQimg.png" class="w-full md:w-full md:ml-3 h-140 " alt="" />
       </div>
 
       <!-- RIght SIDE (Questions) -->
       <div class="relative w-auto md:w-full  z-10 bg-white p-6  md:-ml-4  ">
-        <img src="../assets/greenrighttopicon.svg" alt="" class="left-67 md:left-103  md:top-8 absolute">
+        <img src="../assets/greenrighttopicon.svg" alt="" class="left-67 md:left-105  md:top-8 absolute">
         <p class="text-emerald-700 text-sm">FAQ</p>
         <h2 class="text-3xl font-bold mb-4">Frequently Asked Questions</h2>
 
@@ -372,17 +377,18 @@
     </div>
   </section>
 
-  <!-- Article (Blog) Page -->
-  <section class="bg-stone-50  md:flex-row mx-auto overflow-hidden px-8 py-20">
+  <!-- Article (Blog - Outstanding Blog) Page -->
+  <section class="bg-stone-50  md:flex-row mx-auto overflow-hidden px-8  md:py-20 py-8">
     <div class="overflow-hidden max-w-6xl mx-auto">
+
       <!-- Header -->
-      <div class="flex flex-col md:flex-row justify-between relative items-start md:px-8">
+      <div class="flex flex-col md:flex-row justify-between relative items-start md:px-3">
         <div>
           <p class="text-emerald-800 text-sm font-semibold">Blog</p>
           <h2 class="text-black-400 text-4xl font-bold">
             Some Outstanding Articles
           </h2>
-          <img src="../assets/greenrighttopicon.svg" alt="" class="left-30 top-2 md:left-120  md:bottom-10 absolute">
+          <img src="../assets/greenrighttopicon.svg" alt="strip" class="left-80 top-2 md:left-118 md:bottom-20 absolute">
         </div>
         <button
           class="border border-emerald-700 text-emerald-700 mt-2 px-6 py-3 cursor-pointer hover:bg-emerald-700 hover:text-white">
@@ -391,10 +397,10 @@
       </div>
 
       <!-- Both article  -->
-      <div class="grid grid-cols-1 top-10 md:grid-cols-2 md:px-4 mb-6 relative">
-
+      <div class="grid grid-cols-1 top-10 md:grid-cols-2 mb-6 relative">
+        <img src="../assets/fullyellowicon.svg" alt="" class="absolute left-85 top-170 z-10 md:-right-4 md:top-55 h-20 w-20 ">
         <!-- Left big article  -->
-        <div class="w-full ">
+        <div class="w-full md:w-full">
           <div class="md:px-4">
             <img class="pt-6" src="../images/articleimg.jpg" alt="img" />
             <h3><strong>Practical Childcare Tips</strong></h3>
@@ -441,119 +447,113 @@
             </div>
           </div>
         </div>
-        <img src="../assets/fullyellowicon.svg" alt="" class="absolute -right-10 top-50">
+
       </div>
+
     </div>
   </section>
 
   <!-- Testimonial Page -->
-  <section class="bg-stone-50   md:flex-row mx-auto  overflow-hidden px-8  py-14 relative">
+  <section class="bg-stone-50 md:flex-row mx-auto overflow-hidden px-8 md:px-18 md:py-14 py-8 relative">
 
-    <div class="max-w-6xl mx-auto">
-
-   
-
-    <div class="flex flex-col md:flex-row justify-between relative items-start  md:px-8">
-
-      <div>
-        <p class="text-emerald-800 text-sm font-semibold">Testimonials</p>
-        <h2 class="text-black-400 text-4xl font-bold">
-          What our Clients say About us
-        </h2>
-
-      </div>
-      
-      <button
-        class="border border-emerald-700 text-emerald-700 my-3 px-6 py-3 cursor-pointer hover:bg-emerald-700 hover:text-white transition">
-        View More →
-      </button>
-      <img src="../assets/fullgreenicon.svg" alt="full" class=" absolute  left-0 top-120">
-      <img src="../assets/greenrighttopicon.svg" alt="strip" class=" top-1 right-145 absolute">
-    </div>
-  
-
-
-    <div class="grid grid-cols-1 w-full gap-5 md:grid-cols-2 md:px-8 pt-6">
-
-
-      <!-- Testimonial 1 -->
-      <div class="flex flex-col border border-zinc-300 md:flex-row text-left p-5">
-        <img class="pt-2 h-80 md:h-60" src="../images/test1.png" alt="img" />
-        <div class="pl-2 pt-2">
-          <img src="../assets/quoteicon.svg" alt="quoteicon">
-          <p class="text-sm">
-            “Exceptional Care and Support” We couldn't be happier with the childcare service! The staff are incredibly
-            attentive and caring, always ensuring that our child feels safe and loved.
-          </p>
-          <br>
-          <img src="../assets/reviewstaricon.svg" alt="star">
-          <br>
-          <p><strong>Dc. Abu Talal. </strong>Consultant Interventional Cardiologist</p>
-
+    <div class="max-w-6xl mx-auto ">
+      <div class="flex flex-col md:flex-row justify-between relative items-start">
+        <div>
+          <p class="text-emerald-800 text-sm font-semibold">Testimonials</p>
+          <h2 class="text-black-400 text-4xl font-bold">
+            What our Clients say About us
+          </h2>
         </div>
+        <img src="../assets/greenrighttopicon.svg" alt="strip" class="top-2 left-88 md:top-1 md:left-129 absolute">
+        <button
+          class="border border-emerald-700 text-emerald-700 my-3 px-6 py-3 cursor-pointer hover:bg-emerald-700 hover:text-white transition">
+          View More →
+        </button>
+        <img src="../assets/fullgreenicon.svg" alt="full" class=" absolute  -left-18 top-120">
+        
       </div>
+     
 
-      <!-- Testimonial 2 -->
-      <div class="flex flex-col border border-zinc-300 md:flex-row text-left p-5">
-        <img class="pt-2 h-80 md:h-60" src="../images/test2.png" alt="img" />
-        <div class="pl-2 pt-2">
-          <img src="../assets/quoteicon.svg" alt="quoteicon">
-          <p class="text-sm">
-            “Lifesaver” I honestly don’t know what I would have done without this childcare service! As a new parent, I
-            was feeling overwhelmed, but the staff here have been an absolute lifesaver......
-          </p>
-          <br>
-          <img src="../assets/reviewstaricon.svg" alt="star">
-          <br>
-          <p><strong>Ahmed j. </strong>Consultant Interventional Cardiologist</p>
+      <!-- Right grid  -->
+      <div class="grid grid-cols-1 w-full gap-5 md:grid-cols-2  pt-6">
 
+
+        <!-- Testimonial 1 -->
+        <div class="flex flex-col border border-zinc-300 md:flex-row text-left">
+          <img class="p-3 h-full md:h-full" src="../images/test1.png" alt="img" />
+          <div class="pl-2 pt-2">
+            <img src="../assets/quoteicon.svg" alt="quoteicon">
+            <p class="text-sm">
+              “Exceptional Care and Support” We couldn't be happier with the childcare service! The staff are incredibly
+              attentive and caring, always ensuring that our child feels safe and loved.
+            </p>
+
+            <img src="../assets/reviewstaricon.svg" alt="star">
+
+            <p><strong>Dc. Abu Talal. </strong>Consultant Interventional Cardiologist</p>
+
+          </div>
         </div>
-      </div>
+        <!-- Testimonial 1 -->
+        <div class="flex flex-col border border-zinc-300 md:flex-row text-left">
+          <img class="p-3 h-full md:h-full" src="../images/test1.png" alt="img" />
+          <div class="pl-2 pt-2">
+            <img src="../assets/quoteicon.svg" alt="quoteicon">
+            <p class="text-sm">
+              “Exceptional Care and Support” We couldn't be happier with the childcare service! The staff are incredibly
+              attentive and caring, always ensuring that our child feels safe and loved.
+            </p>
 
-      <!-- Testimonial 3 -->
-      <div class="flex flex-col border border-zinc-300 md:flex-row text-left p-5">
-        <img class="pt-2 h-80 md:h-60 md:w-58" src="../images/test3.png" alt="img" />
-        <div class="pl-2 pt-2">
-          <img src="../assets/quoteicon.svg" alt="quoteicon">
-          <p class="text-sm">
-            “Highly Recommended” We absolutely love this daycare! The caregivers treat our son like family, and he’s
-            always excited to go. It’s clear they’re passionate about what they do........
-          </p>
-          <br>
-          <img src="../assets/reviewstaricon.svg" alt="star">
-          <br>
-          <p><strong>Sad bin Ali. </strong>Consultant Interventional Cardiologist</p>
+            <img src="../assets/reviewstaricon.svg" alt="star">
 
+            <p><strong>Dc. Abu Talal. </strong>Consultant Interventional Cardiologist</p>
+
+          </div>
         </div>
-      </div>
+        <!-- Testimonial 1 -->
+        <div class="flex flex-col border border-zinc-300 md:flex-row text-left">
+          <img class="p-3 h-full md:h-full" src="../images/test1.png" alt="img" />
+          <div class="pl-2 pt-2">
+            <img src="../assets/quoteicon.svg" alt="quoteicon">
+            <p class="text-sm">
+              “Exceptional Care and Support” We couldn't be happier with the childcare service! The staff are incredibly
+              attentive and caring, always ensuring that our child feels safe and loved.
+            </p>
 
-      <!-- Testimonial 4 -->
-      <div class="flex flex-col border border-zinc-300 md:flex-row text-left p-5">
-        <img class="pt-2 h-80 md:h-60" src="../images/test4.png" alt="img" />
-        <div class="pl-2 pt-2">
-          <img src="../assets/quoteicon.svg" alt="quoteicon">
-          <p class="text-sm">
-            “Outstanding Service” We have been beyond impressed with the childcare service here. From day one, the staff
-            has gone above and beyond to create a warm, nurturing.
-          </p>
-          <br>
-          <img src="../assets/reviewstaricon.svg" alt="star">
+            <img src="../assets/reviewstaricon.svg" alt="star">
 
-          <br>
-          <p><strong>Hossain. </strong>Consultant Interventional Cardiologist</p>
+            <p><strong>Dc. Abu Talal. </strong>Consultant Interventional Cardiologist</p>
 
+          </div>
         </div>
+        <!-- Testimonial 1 -->
+        <div class="flex flex-col border border-zinc-300 md:flex-row text-left">
+          <img class="p-3 h-full md:h-full" src="../images/test1.png" alt="img" />
+          <div class="pl-2 pt-2">
+            <img src="../assets/quoteicon.svg" alt="quoteicon">
+            <p class="text-sm">
+              “Exceptional Care and Support” We couldn't be happier with the childcare service! The staff are incredibly
+              attentive and caring, always ensuring that our child feels safe and loved.
+            </p>
+
+            <img src="../assets/reviewstaricon.svg" alt="star">
+
+            <p><strong>Dc. Abu Talal. </strong>Consultant Interventional Cardiologist</p>
+
+          </div>
+        </div>
+
+
       </div>
-    </div>
     </div>
   </section>
 
   <!-- Contact Page -->
-  <section class="bg-stone-50  md:flex-row mx-auto overflow-hidden px-8 py-20">
+  <section class="bg-stone-50  md:flex-row mx-auto overflow-hidden md:px-18 px-8   md:py-10">
     <div class="flex md:flex-row  flex-col max-w-6xl mx-auto ">
 
       <!-- Left Contact -->
-      <div class="w-full text-leftmd:w-1/2 py-4">
+      <div class="w-full text-left md:w-1/2 py-4">
         <strong class="text-4xl">Contact Info</strong>
         <p>We are here to support you on your <br>
           journey with baby childcare</p>
@@ -592,14 +592,14 @@
       </div>
 
       <!-- Right Form -->
-      <div class="flex flex-colw-full md:w-120 p-4">
+      <div class="flex flex-colw-full md:w-4/5 pl-4 ">
         <form action="#" method="">
-          <input type="text" name="name" placeholder="Your Name" class="border w-full mb-4 p-2 h-10">
-          <input type="text" name="email" placeholder="Email address" class="border w-full mb-4 p-2  h-10">
-          <input type="text" name="subject" placeholder="subject" class="border w-full mb-4 p-2  h-10">
-          <textarea name="message" id="message" placeholder="Message" class="border w-full mb-4 p-2 h-20"></textarea>
+          <input type="text" name="name" placeholder="Your Name" class="border border-zinc-300 w-full mb-4 p-2 h-10">
+          <input type="text" name="email" placeholder="Email address" class="border border-zinc-300 w-full mb-4 p-2  h-10">
+          <input type="text" name="subject" placeholder="subject" class="border border-zinc-300 w-full mb-4 p-2  h-10">
+          <textarea name="message" id="message" placeholder="Message" class="border border-zinc-300 w-full mb-4 p-2 h-20"></textarea>
           <br>
-          <button class="bg-green-800 text-white hover:bg-green-900 p-3 my-4 cursor-pointer">Send Message</button>
+          <button class="bg-emerald-700 text-white hover:bg-green-900 p-3 my-4 cursor-pointer">Send Message</button>
 
         </form>
       </div>
