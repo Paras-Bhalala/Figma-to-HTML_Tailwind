@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-  <link rel="icon" type="icon/imge" href="../images/favicon.svg">
+  <link rel="icon" type="icon/image" href="../images/favicon.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -28,21 +28,57 @@
     <div class="absolute top-0 right-0  md:w-1/2 h-100 bg-amber-300"></div>
     <div class="relative z-10">
       <!-- NAVBAR -->
-      <nav class="flex justify-between items-center px-8 md:px-16 py-6">
-        <img src="../assets/MOM.svg" alt="Logo" class="h-8" />
-        <div class="flex gap-35 justify-center">
-          <ul class="hidden md:flex gap-8 font-medium pt-2">
-            <li><a href="#" class="text-green-700">Home</a></li>
-            <li><a href="#" class="hover:text-green-700">About Us</a></li>
-            <li><a href="#" class="hover:text-green-700">Blog</a></li>
-            <li><a href="#" class="hover:text-green-700">Contact Us</a></li>
-            <li><a href="#" class="hover:text-green-700">Service</a></li>
-          </ul>
-          <button class="bg-emerald-700 text-white px-6 py-2 hover:bg-green-900 cursor-pointer">
-            Sign Up
-          </button>
-        </div>
-      </nav>
+      <nav class="flex justify-between items-center px-8 md:px-16 py-6 relative">
+
+  <!-- Logo -->
+  <img src="../assets/MOM.svg" alt="Logo" class="h-8" />
+
+  <!-- Hidden Checkbox -->
+  <input type="checkbox" id="menu-toggle" class="peer hidden">
+
+  <!-- Desktop Menu + Button -->
+  <div class="hidden md:flex gap-35 justify-center">
+
+    <ul class="flex gap-8 font-medium pt-2">
+      <li><a href="#" class="text-green-700 hover:border-b transition">Home</a></li>
+      <li><a href="#" class="hover:text-green-700 hover:border-b transition">About Us</a></li>
+      <li><a href="#" class="hover:text-green-700 hover:border-b transition">Blog</a></li>
+      <li><a href="#" class="hover:text-green-700 hover:border-b transition">Contact Us</a></li>
+      <li><a href="#" class="hover:text-green-700 hover:border-b transition">Service</a></li>
+    </ul>
+
+    <button class="bg-emerald-700 text-white px-6 py-2 hover:bg-green-900">
+      Sign Up
+    </button>
+
+  </div>
+
+  <!-- Mobile Sign Up Button (Center) -->
+  <button class="md:hidden absolute left-1/2 -translate-x-1/2 bg-emerald-700 text-white px-4 py-2">
+    Sign Up
+  </button>
+
+  <!-- Hamburger -->
+  <label for="menu-toggle" class="md:hidden cursor-pointer">
+    <div class="flex flex-col gap-1">
+      <span class="w-6 h-0.5 bg-black"></span>
+      <span class="w-6 h-0.5 bg-black"></span>
+      <span class="w-6 h-0.5 bg-black"></span>
+    </div>
+  </label>
+
+  <!-- Mobile Menu -->
+  <ul class="absolute top-20 left-0 w-full bg-white flex-col items-center gap-6 py-6 font-medium hidden peer-checked:flex md:hidden">
+
+    <li><a href="#" class="text-green-700">Home</a></li>
+    <li><a href="#" class="hover:text-green-700">About Us</a></li>
+    <li><a href="#" class="hover:text-green-700">Blog</a></li>
+    <li><a href="#" class="hover:text-green-700">Contact Us</a></li>
+    <li><a href="#" class="hover:text-green-700">Service</a></li>
+
+  </ul>
+
+</nav>
       <!-- HERO -->
       <div class="flex flex-col md:flex-row items-center ">
         <!-- LEFT CONTENT -->
@@ -256,7 +292,7 @@
             for Child
           </h2>
         </div>
-        <div class="h-28 w-28 left-64 md:left-148 md:top-0 absolute "><img src="../assets/yellowrighttopicon.svg"
+        <div class="h-28 w-28 left-64 md:left-154 md:top-0 absolute "><img src="../assets/yellowrighttopicon.svg"
             alt="strip"></div>
         <button
           class="border border-white text-white my-3 px-6 py-3  hover:bg-white hover:text-emerald-800 transition cursor-pointer">
@@ -317,63 +353,125 @@
       </div>
 
       <!-- RIght SIDE (Questions) -->
-      <div class="relative w-auto md:w-full  z-10 bg-white p-6  md:-ml-4  ">
-        <img src="../assets/greenrighttopicon.svg" alt="strip" class="left-67 md:left-105  md:top-8 absolute">
-        <p class="text-emerald-700 text-sm">FAQ</p>
-        <h2 class="text-3xl font-bold mb-4">Frequently Asked Questions</h2>
+ <div class="relative h-auto bg-white p-6 md:-ml-4">
+
+  <!-- Decorative icon -->
+  <img src="../assets/greenrighttopicon.svg"
+       class="absolute right-36 top-9 ">
+
+  <!-- Heading -->
+  <p class="text-emerald-700 text-sm mb-2">FAQ</p>
+
+  <h2 class="text-3xl font-bold mb-6">
+    Frequently Asked Questions
+  </h2>
 
 
-        <!-- All Questions -->
-        <div class="space-y-5">
-          <!-- Q1 -->
-          <div class="flex justify-between border border-zinc-300 p-2 gap-4 pt-5">
-            <div>
-              <h4 class="font-semibold">Emotional Healing</h4>
-              <p class="text-sm text-gray-500">
-                Support emotional and social growth.
-              </p>
-            </div>
-            <div class="bg-white-100 p-2 rounded-full h-8 w-8">
-              <img src="../assets/plusicon.svg" alt="tick" />
-            </div>
-          </div>
-          <!-- Q2 -->
-          <div class="flex justify-between border border-zinc-300 p-2 gap-4">
-            <div>
-              <h4 class="font-semibold">Self-Care</h4>
-              <p class="text-sm text-gray-500">Practical tips for parents.</p>
-            </div>
-            <div class="bg-white-100 p-2 rounded-full h-8 w-8">
-              <img src="../assets/plusicon.svg" alt="tick" />
-            </div>
-          </div>
-          <!-- Q3 -->
-          <div class="flex justify-between border border-zinc-300 p-2 gap-4">
-            <div>
-              <h4 class="font-semibold">Mindset & Empowerment</h4>
-              <p class="text-sm text-gray-500">
-                Turn challenges into opportunities.
-              </p>
-            </div>
-            <div class="bg-white-100 p-2 rounded-full h-8 w-8">
-              <img src="../assets/plusicon.svg" alt="tick" />
-            </div>
-          </div>
+  <!-- FAQ List -->
+  <div class="space-y-5">
 
-          <!-- Q4 -->
-          <div class="flex justify-between border border-zinc-300 p-2 gap-4">
-            <div>
-              <h4 class="font-semibold">Mindset & Empowerment</h4>
-              <p class="text-sm text-gray-500">
-                Turn challenges into opportunities.
-              </p>
-            </div>
-            <div class="bg-white-100 p-2 rounded-full h-8 w-8">
-              <img src="../assets/plusicon.svg" alt="tick" />
-            </div>
-          </div>
+    <!-- Q1 -->
+    <details class="group border border-zinc-300 p-5">
+
+      <summary class="flex justify-between items-center cursor-pointer list-none">
+
+        <div>
+          <h4 class="font-semibold text-lg">Emotional Healing</h4>
+          <p class="text-sm text-gray-500">
+            Support emotional and social growth.
+          </p>
         </div>
-      </div>
+
+        <img src="../assets/plusicon.svg"
+             class="w-5 h-5 ">
+
+      </summary>
+
+      <p class="mt-4 text-sm text-gray-600">
+        Emotional healing supports children and parents in understanding
+        emotions and developing stronger emotional connections.
+      </p>
+
+    </details>
+
+
+    <!-- Q2 -->
+    <details class="group border border-zinc-300 p-5">
+
+      <summary class="flex justify-between items-center cursor-pointer list-none">
+
+        <div>
+          <h4 class="font-semibold text-lg">Self-Care</h4>
+          <p class="text-sm text-gray-500">
+            Practical tips for parents.
+          </p>
+        </div>
+
+        <img src="../assets/plusicon.svg"
+             class="w-5 h-5 ">
+
+      </summary>
+
+      <p class="mt-4 text-sm text-gray-600">
+        Self-care helps parents maintain emotional balance and build
+        a healthier family environment.
+      </p>
+
+    </details>
+
+
+    <!-- Q3 -->
+    <details class="group border border-zinc-300 p-5">
+
+      <summary class="flex justify-between items-center cursor-pointer list-none">
+
+        <div>
+          <h4 class="font-semibold text-lg">Mindset & Empowerment</h4>
+          <p class="text-sm text-gray-500">
+            Turn challenges into opportunities.
+          </p>
+        </div>
+
+        <img src="../assets/plusicon.svg"
+             class="w-5 h-5 ">
+
+      </summary>
+
+      <p class="mt-4 text-sm text-gray-600">
+        Developing a growth mindset helps families turn difficulties
+        into learning opportunities.
+      </p>
+
+    </details>
+
+
+    <!-- Q4 -->
+    <details class="group border border-zinc-300 p-5">
+
+      <summary class="flex justify-between items-center cursor-pointer list-none">
+
+        <div>
+          <h4 class="font-semibold text-lg">Mindset & Empowerment</h4>
+          <p class="text-sm text-gray-500">
+            Turn challenges into opportunities.
+          </p>
+        </div>
+
+        <img src="../assets/plusicon.svg"
+             class="w-5 h-5 ">
+
+      </summary>
+
+      <p class="mt-4 text-sm text-gray-600">
+        Empowerment builds confidence and resilience in both
+        parents and children.
+      </p>
+
+    </details>
+
+  </div>
+
+</div>
     </div>
   </section>
 
@@ -592,7 +690,7 @@
       </div>
 
       <!-- Right Form -->
-      <div class="flex flex-colw-full md:w-4/5 pl-4 ">
+      <div class="w-full text-left md:w-1/2 py-4 ">
         <form action="#" method="">
           <input type="text" name="name" placeholder="Your Name" class="border border-zinc-300 w-full mb-4 p-2 h-10">
           <input type="text" name="email" placeholder="Email address" class="border border-zinc-300 w-full mb-4 p-2  h-10">
